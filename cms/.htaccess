@@ -1,0 +1,9 @@
+Options -Indexes
+ServerSignature Off
+RewriteEngine On
+
+RewriteRule ^admin$ admin.php [L]
+
+RewriteRule db.json - [F]
+
+RewriteRule ^(.*)$ cms/cms.php [QSA,L]

@@ -1,0 +1,10 @@
+{
+    "config":{
+        "loginURL": "login",
+        "password": "$2y$10$G\/yCwmr4swgdqO878V.xKuULCra8.x2lvwg2DnFbMv0g4ySwOJ902"
+    },
+    "blocks": {
+        "nadpis": "Lorem ipsum",
+        "uvod": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas lorem. Duis risus. Integer tempor. Aliquam id dolor. Praesent dapibus. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Etiam commodo dui eget wisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent id justo in neque elementum ultrices. Maecenas lorem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero."
+    }
+}
