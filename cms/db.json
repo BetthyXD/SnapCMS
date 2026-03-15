@@ -1,6 +1,6 @@
 {
     "config":{
-        "primaryColor" : "#66b4d0",
+        "primaryColor" : "#28979f",
         "base": "/snapcms/",
         "loginURL": "login",
         "logoutURL" : "logout",

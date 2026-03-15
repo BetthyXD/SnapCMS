@@ -12,8 +12,12 @@ class SCMS
     ];
 
     public const ERROR = 'error';
+    public const WARNING = 'warning';
+    public const SUCCESS = 'success';
     private const ALERT_ICONS = [
         self::ERROR => "fa-circle-xmark",
+        self::WARNING => "fa-triangle-exclamation",
+        self::SUCCESS => "fa-circle-check"
     ];
 
 
@@ -199,7 +203,7 @@ HTML;
             foreach($newData as $key => $value){
                 $this->data["blocks"][$key] = strip_tags(trim($value));
             }
-            $this->saveData();
+            return $this->saveData();
         }
         
     }
@@ -230,5 +234,9 @@ session_start();
 $cms = new SCMS();
 
 if(isset($_POST["changes"])){
-    $cms->updateData($_POST["changes"]);
+    if($cms->updateData($_POST["changes"])){
+        $cms->alert("Stránka byla uložena.", SCMS::SUCCESS);
+    }else{
+        $cms->alert("Stránku se nepodařilo uložit.", SCMS::ERROR);
+    }
 }
