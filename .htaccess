@@ -1,0 +1,11 @@
+Options -Indexes
+ServerSignature Off
+RewriteEngine On
+
+RewriteRule db.json - [F]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ cms/admin.php?url=$1 [L,QSA]

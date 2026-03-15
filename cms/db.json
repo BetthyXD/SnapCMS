@@ -1,6 +1,9 @@
 {
     "config":{
+        "primaryColor" : "#66b4d0",
+        "base": "/snapcms/",
         "loginURL": "login",
+        "logoutURL" : "logout",
         "password": "$2y$10$G\/yCwmr4swgdqO878V.xKuULCra8.x2lvwg2DnFbMv0g4ySwOJ902"
     },
     "blocks": {
