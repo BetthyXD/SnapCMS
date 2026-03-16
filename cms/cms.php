@@ -165,10 +165,11 @@ class SCMS
     public function showAdminBar()
     {
         if ($this->isLoggedIn()) {
+            $logoutURL = $this->getBaseURL().$this->getURLs()['logoutURL'];
             echo <<<HTML
             <div class="snapCMS">
                 <div id="adminBar">
-                    <a href="{$this->getBaseURL()}logout">Odhlásit se</a>
+                    <a href="{$logoutURL}">Odhlásit se</a>
                     <form action="" method="post" onsubmit="loadChanges()">
                         <input name="changes" id="changes" type="hidden">
                         <button type="submit">Uložit</button>
