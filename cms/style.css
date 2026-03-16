@@ -123,6 +123,7 @@ top:0;
 left: 50%;
 transform: translateX(-50%);
 margin-top: 5px;
+z-index:999;
 }
 
 .snapCMS .alertBox .alert{
@@ -173,7 +174,7 @@ margin-top: 5px;
 .snapCMS:has(#adminBar){
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 998;
 }
 
 .snapCMS #adminBar button {
