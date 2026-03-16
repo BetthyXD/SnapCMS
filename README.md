@@ -21,7 +21,7 @@ Stačí nahrát soubory na server.
 Administrace je defaultně dostupná na adrese `tvujweb.cz/login`.
 * **Výchozí heslo:** `heslo`
 > [!TIP]
-> Adresa pro přihlášení i odhlášení se dá změnit v db.json
+> Adresa pro přihlášení i odhlášení se dá změnit v `db.json`
 
 #### Změna hesla
 Změna hesla zatím není dostupná v uživatelském rozhraní. Dočasně jde změnit jen v PHP přes
