@@ -189,9 +189,28 @@ margin-top: 5px;
 /* Edit */
 .editable{
 transition: 0.1s ease-in-out;
+}
+
+p .editable, div .editable{
 display: block;
 }
 
 .editable:hover{
 border: dashed gray 1px;
+}
+
+.editable:focus{
+    outline:none;
+    border: solid 2px gray;
+}
+
+button:has(.editable), 
+a:has(.editable) {
+    pointer-events: none;
+    cursor: default;
+}
+
+.editable {
+    pointer-events: auto !important;
+    cursor: text;
 }

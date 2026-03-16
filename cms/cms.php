@@ -201,7 +201,7 @@ HTML;
             $newData = json_decode($blocks, true);
 
             foreach($newData as $key => $value){
-                $this->data["blocks"][$key] = strip_tags(trim($value));
+                $this->data["blocks"][$key] = strip_tags($value);
             }
             return $this->saveData();
         }

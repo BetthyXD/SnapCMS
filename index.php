@@ -17,10 +17,11 @@ require_once("cms/cms.php");
     $cms->text('nadpis', SCMS::SHORT);
     ?>
 </h1>
+<p>
 <?php
 $cms->text('uvod');
 ?>
-
+</p>
 
 
 <?php $cms->showAlerts(); ?>
