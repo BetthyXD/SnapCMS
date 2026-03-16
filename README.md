@@ -27,3 +27,17 @@ Administrace je defaultně dostupná na adrese `tvujweb.cz/login`.
 Změna hesla zatím není dostupná v uživatelském rozhraní. Dočasně jde změnit jen v PHP přes
 ```php
 $cms->setPassword("mojeNoveHeslo1234");
+```
+
+## 🛠 Použití na webu
+
+Jakýkoliv editovatelný text se na web vkládá přes
+```php
+$cms->text('id-textu');
+```
+CMS automaticky na web vloží odstavec Lorem ipsum. Pro kratší texty je vhodnější
+```php
+$cms->text('id-textu', $cms::SHORT);
+```
+
+To je vše :D
