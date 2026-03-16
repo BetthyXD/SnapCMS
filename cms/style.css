@@ -170,6 +170,12 @@ margin-top: 5px;
     background-color: color-mix(in srgb, var(--background), var(--primary) 10%);
 }
 
+.snapCMS:has(#adminBar){
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .snapCMS #adminBar button {
     min-width: 6rem;
 }
@@ -191,17 +197,12 @@ margin-top: 5px;
 transition: 0.1s ease-in-out;
 }
 
-p .editable, div .editable{
+p > .editable, div > .editable{
 display: block;
 }
 
 .editable:hover{
 border: dashed gray 1px;
-}
-
-.editable:focus{
-    outline:none;
-    border: solid 2px gray;
 }
 
 button:has(.editable), 
