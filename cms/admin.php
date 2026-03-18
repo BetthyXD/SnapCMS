@@ -45,7 +45,7 @@ if(isset($_GET["url"])){
         </form>
 
     </div>
-    <span class="footer">Made by <a href="https://betthy.cz" target="__BLANK">Betthy</a></span>
+    <span class="footer">Made with ❤️ by <a href="https://betthy.cz" target="__BLANK">Betthy</a></span>
     <?php $cms->showAlerts(); ?>
 </body>
 </html>
