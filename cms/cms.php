@@ -192,6 +192,34 @@ class SCMS
         document.getElementById('changes').value = JSON.stringify(dataToSave);
     }
 
+    document.addEventListener('DOMContentLoaded', () => {
+    
+    const labelsToSwap = document.querySelectorAll('label:has(.editable)');
+    labelsToSwap.forEach(label => {
+        const span = document.createElement('span');
+        
+        Array.from(label.attributes).forEach(attr => {
+            span.setAttribute(attr.name, attr.value);
+        });
+        
+        span.innerHTML = label.innerHTML;
+        label.parentNode.replaceChild(span, label);
+    });
+
+    const buttonsToFix = document.querySelectorAll('button:has(.editable)');
+    
+    buttonsToFix.forEach(btn => {
+        btn.setAttribute('type', 'button');
+        
+        btn.addEventListener('click', (e) => {
+            if (e.target.closest('.editable')) {
+                e.stopPropagation();
+            }
+        });
+    });
+
+});
+
         </script>
 HTML;
         }
